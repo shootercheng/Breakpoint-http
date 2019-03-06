@@ -15,8 +15,9 @@ server:
 
 #log
 logging:
-  config: classpath:logback.xml
-  level: info
+    config: classpath:logback.xml
+    level:
+         ROOT : INFO
 
 # 默认的profile为dev，其他环境通过指定启动参数使用不同的profile，比如：
 #   测试环境：java -jar my-spring-boot.jar --spring.profiles.active=test
